@@ -1,3 +1,23 @@
 spring:
   application:
     name: testingapp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    callback-locations: classpath:db/migration
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+server:
+  port: 7765
+debug: true
