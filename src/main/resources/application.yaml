@@ -1,6 +1,9 @@
 spring:
   application:
     name: testingapp
+  threads:
+    virtual:
+      enabled: true
   datasource:
     url: jdbc:postgresql://localhost:5432/test
     username: username
@@ -20,4 +23,4 @@ spring:
         format_sql: true
 server:
   port: 7765
-debug: true
+

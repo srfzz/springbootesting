@@ -1,18 +1,23 @@
 package com.testingapp.testingapp.services.Impl;
 
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import com.openthinks.others.webpages.exception.ResourceAlreadyExistException;
+import com.testingapp.testingapp.exceptions.ResourceNotFoundException;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+
 import com.testingapp.testingapp.dto.EmployeeRequestDto;
 import com.testingapp.testingapp.dto.EmployeeResponseDto;
 import com.testingapp.testingapp.entity.EmployeeEntity;
 import com.testingapp.testingapp.mapper.EmployeeMapper;
 import com.testingapp.testingapp.repository.EmployeeRepository;
 import com.testingapp.testingapp.services.contracts.EmployeeService;
-import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import tools.jackson.databind.cfg.MapperBuilder;
 
-import java.util.List;
+import tools.jackson.databind.cfg.MapperBuilder;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -27,34 +32,36 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<EmployeeResponseDto> findAll() {
-        return List.of();
+        return employeeRepository.findAll().stream().map(employeeMapper::toDto).collect(Collectors.toList());
     }
 
     @Override
     public EmployeeResponseDto findById(Long id) {
-        return null;
+
+        return employeeRepository.findById(id).map(employeeMapper::toDto).orElseThrow(()->new ResourceNotFoundException("Employee not found"));
     }
 
     @Override
     @Transactional()
     public EmployeeResponseDto save(EmployeeRequestDto employeeRequestDto) {
-        try{
+        boolean isExist = employeeRepository.existsByEmail(employeeRequestDto.email());
+        if(isExist){
+            throw new ResourceAlreadyExistException("Employee with email " + employeeRequestDto.email() + " already exists.");
+        }
             EmployeeEntity employeeEntity = employeeMapper.toEntity(employeeRequestDto);
             EmployeeEntity savedEntity = employeeRepository.saveAndFlush(employeeEntity);
             return employeeMapper.toDto(savedEntity);
-        }catch(DataIntegrityViolationException e){
-            throw new DataIntegrityViolationException(e.getMessage());
-        }catch (Exception e)
-        {
-            throw new RuntimeException(e.getMessage());
-        }
-
+       
     }
 
+    
     @Override
     public EmployeeResponseDto update(EmployeeRequestDto employeeRequestDto, Long id) {
-        return null;
+        EmployeeEntity employeeEntity = employeeRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Employee not found"));
+        EmployeeEntity savedEntity= employeeRepository.save(employeeMapper.toEntity(employeeRequestDto));
+        return employeeMapper.toDto(savedEntity);
     }
 
     @Override
