@@ -1,9 +1,7 @@
 package com.testingapp.testingapp.reponse;
 
 import com.testingapp.testingapp.dto.EmployeeResponseDto;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -12,7 +10,8 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
+@Getter
+@Setter
 public class ApiResponse<T> {
     private boolean success;
     private Integer status;
