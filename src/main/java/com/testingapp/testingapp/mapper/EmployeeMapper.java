@@ -24,4 +24,28 @@ public class EmployeeMapper {
         }
         return EmployeeResponseDto.builder().id(entity.getId()).firstName(entity.getFirstName()).lastName(entity.getLastName()).email(entity.getEmail()).build();
     }
+    public void updateEntityFromDto(EmployeeRequestDto requestDto, EmployeeEntity entity) {
+        if (requestDto == null || entity == null) {
+            return;
+        }
+        entity.setFirstName(requestDto.firstName());
+        entity.setLastName(requestDto.lastName());
+        entity.setEmail(requestDto.email());
+    }
+    public void patchEntityFromDto(EmployeeRequestDto requestDto, EmployeeEntity entity) {
+        if (requestDto == null || entity == null) {
+            return;
+        }
+
+        // Only update if the field is not null
+        if (requestDto.firstName() != null) {
+            entity.setFirstName(requestDto.firstName());
+        }
+        if (requestDto.lastName() != null) {
+            entity.setLastName(requestDto.lastName());
+        }
+        if (requestDto.email() != null) {
+            entity.setEmail(requestDto.email());
+        }
+    }
 }

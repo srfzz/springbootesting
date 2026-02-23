@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 @RestController
 @RequestMapping(path = "/employees")
@@ -40,9 +42,21 @@ public class EmployeeController {
         return ResponseEntity.status(HttpStatus.OK).body(apiResponse);
     }
     @PutMapping(path = "/{id}")
-    public ResponseEntity<ApiResponse<?>> update(@PathVariable Long id, @RequestBody EmployeeRequestDto employeeRequestDto) {
+    public ResponseEntity<ApiResponse<?>> update(@Valid @PathVariable Long id, @RequestBody EmployeeRequestDto employeeRequestDto) {
         EmployeeResponseDto responseDto=employeeService.update(employeeRequestDto,id);
         ApiResponse<?> apiResponse=ApiResponse.builder().status(HttpStatus.OK.value()).success(true).timestamp(LocalDateTime.now()).message("Employee Updated Successfully").data(responseDto).build();
         return ResponseEntity.status(HttpStatus.OK).body(apiResponse);
     }
+        @PatchMapping(path = "/{id}")
+        public ResponseEntity<ApiResponse<?>> updateEmployee(@PathVariable Long id,@RequestBody Map<String, Object> employeeRequestDto) {
+            EmployeeResponseDto responseDto=employeeService.UpdateEmployee(employeeRequestDto,id);
+            ApiResponse<?> apiResponse=ApiResponse.builder().status(HttpStatus.OK.value()).success(true).timestamp(LocalDateTime.now()).message("Employee Updated Successfully").data(responseDto).build();
+            return ResponseEntity.status(HttpStatus.OK).body(apiResponse);
+        }
+        @DeleteMapping("/{id}")
+    public  ResponseEntity<ApiResponse<?>> deleteById(@PathVariable Long id) {
+         employeeService.delete(id);
+         ApiResponse<?> apiResponse=ApiResponse.builder().status(HttpStatus.OK.value()).success(true).message("Deleted Successfully").data(null).timestamp(LocalDateTime.now()).build();
+         return ResponseEntity.status(HttpStatus.OK).body(apiResponse);
+        }
 }
