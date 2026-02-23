@@ -1,0 +1,173 @@
+2026-02-23T16:13:46.767+05:30  INFO 9012 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 9012 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T16:13:46.770+05:30  INFO 9012 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T16:13:47.573+05:30  INFO 9012 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T16:13:47.865+05:30  INFO 9012 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 274 ms. Found 1 JPA repository interface.
+2026-02-23T16:13:48.059+05:30  INFO 9012 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T16:13:48.476+05:30  INFO 9012 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:2c274ecb-a0b2-4d87-9e43-2855a23dfbad;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T16:13:49.131+05:30  INFO 9012 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T16:13:49.257+05:30  INFO 9012 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T16:13:49.336+05:30  INFO 9012 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T16:13:50.092+05:30  INFO 9012 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T16:13:50.207+05:30  WARN 9012 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T16:13:51.938+05:30  INFO 9012 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T16:13:52.007+05:30  INFO 9012 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T16:13:52.963+05:30  INFO 9012 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 7.232 seconds (process running for 10.011)
+2026-02-23T16:13:54.055+05:30  INFO 9012 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T16:13:54.067+05:30  INFO 9012 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsValid
+2026-02-23T16:13:54.085+05:30  INFO 9012 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T16:16:55.612+05:30  INFO 15168 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 15168 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T16:16:55.615+05:30  INFO 15168 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T16:16:56.634+05:30  INFO 15168 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T16:16:56.776+05:30  INFO 15168 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2026-02-23T16:16:56.896+05:30  INFO 15168 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T16:16:57.324+05:30  INFO 15168 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:0dda2453-de73-4ff8-8672-feb4d67ecf3a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T16:16:58.046+05:30  INFO 15168 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T16:16:58.176+05:30  INFO 15168 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T16:16:58.249+05:30  INFO 15168 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T16:16:58.905+05:30  INFO 15168 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T16:16:59.025+05:30  WARN 15168 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T16:17:00.736+05:30  INFO 15168 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T16:17:00.841+05:30  INFO 15168 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T16:17:01.804+05:30  INFO 15168 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 7.244 seconds (process running for 10.304)
+2026-02-23T16:17:02.852+05:30  INFO 15168 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T16:17:02.865+05:30  INFO 15168 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsValid
+2026-02-23T16:17:03.187+05:30  INFO 15168 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T16:18:19.135+05:30  INFO 18008 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 18008 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T16:18:19.138+05:30  INFO 18008 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T16:18:19.993+05:30  INFO 18008 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T16:18:20.155+05:30  INFO 18008 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interface.
+2026-02-23T16:18:20.268+05:30  INFO 18008 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T16:18:20.622+05:30  INFO 18008 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:eeb8735a-1eda-46bf-ace3-ee9e2f7a598e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T16:18:21.237+05:30  INFO 18008 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T16:18:21.357+05:30  INFO 18008 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T16:18:21.426+05:30  INFO 18008 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T16:18:22.129+05:30  INFO 18008 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T16:18:22.250+05:30  WARN 18008 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T16:18:24.054+05:30  INFO 18008 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T16:18:24.124+05:30  INFO 18008 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T16:18:24.986+05:30  INFO 18008 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 6.923 seconds (process running for 9.728)
+2026-02-23T16:18:25.964+05:30  INFO 18008 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T16:18:25.979+05:30  INFO 18008 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsValid
+2026-02-23T16:18:26.286+05:30  INFO 18008 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T18:58:34.020+05:30  INFO 2044 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 2044 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T18:58:34.023+05:30  INFO 2044 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T18:58:34.897+05:30  INFO 2044 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T18:58:35.055+05:30  INFO 2044 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 1 JPA repository interface.
+2026-02-23T18:58:35.165+05:30  INFO 2044 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T18:58:35.609+05:30  INFO 2044 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:dcd4ffea-2264-427c-a7ab-3a3c0af160b9;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T18:58:36.319+05:30  INFO 2044 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T18:58:36.439+05:30  INFO 2044 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T18:58:36.508+05:30  INFO 2044 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T18:58:37.191+05:30  INFO 2044 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T18:58:37.330+05:30  WARN 2044 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T18:58:39.150+05:30  INFO 2044 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T18:58:39.230+05:30  INFO 2044 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T18:58:40.251+05:30  INFO 2044 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 7.227 seconds (process running for 10.132)
+2026-02-23T18:58:41.279+05:30  INFO 2044 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T18:58:41.328+05:30  INFO 2044 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : First we will insert data on the Employee Repository
+2026-02-23T18:58:41.545+05:30  INFO 2044 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsValid
+2026-02-23T18:58:41.561+05:30  INFO 2044 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:02:35.545+05:30  INFO 3892 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 3892 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T19:02:35.548+05:30  INFO 3892 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T19:02:36.509+05:30  INFO 3892 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T19:02:36.656+05:30  INFO 3892 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2026-02-23T19:02:36.776+05:30  INFO 3892 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T19:02:37.144+05:30  INFO 3892 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:1d2e7601-f6d7-41af-bf2a-b23a9b8099d7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T19:02:37.778+05:30  INFO 3892 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T19:02:37.914+05:30  INFO 3892 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T19:02:37.992+05:30  INFO 3892 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T19:02:38.769+05:30  INFO 3892 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T19:02:38.890+05:30  WARN 3892 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T19:02:40.866+05:30  INFO 3892 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T19:02:40.933+05:30  INFO 3892 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:02:41.770+05:30  INFO 3892 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 7.199 seconds (process running for 9.983)
+2026-02-23T19:02:42.788+05:30  INFO 3892 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T19:02:42.824+05:30  INFO 3892 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : First we will insert data on the Employee Repository
+2026-02-23T19:02:43.027+05:30  INFO 3892 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsValid
+2026-02-23T19:02:43.230+05:30  INFO 3892 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:04:21.387+05:30  INFO 15948 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 15948 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T19:04:21.391+05:30  INFO 15948 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T19:04:23.263+05:30  INFO 15948 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T19:04:23.525+05:30  INFO 15948 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 222 ms. Found 1 JPA repository interface.
+2026-02-23T19:04:23.652+05:30  INFO 15948 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T19:04:24.142+05:30  INFO 15948 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:8247b0eb-ddf3-45fd-9d9a-34bae90a792e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T19:04:24.889+05:30  INFO 15948 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T19:04:25.041+05:30  INFO 15948 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T19:04:25.133+05:30  INFO 15948 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T19:04:25.974+05:30  INFO 15948 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T19:04:26.137+05:30  WARN 15948 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T19:04:28.244+05:30  INFO 15948 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T19:04:28.327+05:30  INFO 15948 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:04:29.655+05:30  INFO 15948 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 9.964 seconds (process running for 13.384)
+2026-02-23T19:04:31.297+05:30  INFO 15948 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T19:04:31.349+05:30  INFO 15948 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : First we will insert data on the Employee Repository
+2026-02-23T19:04:31.565+05:30  INFO 15948 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsValid
+2026-02-23T19:04:31.778+05:30  INFO 15948 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:06:54.308+05:30  INFO 15296 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 15296 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T19:06:54.311+05:30  INFO 15296 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T19:06:55.065+05:30  INFO 15296 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T19:06:55.188+05:30  INFO 15296 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2026-02-23T19:06:55.304+05:30  INFO 15296 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T19:06:55.682+05:30  INFO 15296 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:b2d16d85-259c-40bb-af87-ee2b596fd7f2;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T19:06:56.339+05:30  INFO 15296 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T19:06:56.472+05:30  INFO 15296 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T19:06:56.545+05:30  INFO 15296 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T19:06:57.249+05:30  INFO 15296 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T19:06:57.377+05:30  WARN 15296 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T19:06:59.048+05:30  INFO 15296 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T19:06:59.115+05:30  INFO 15296 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:06:59.935+05:30  INFO 15296 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 6.601 seconds (process running for 9.498)
+2026-02-23T19:07:01.010+05:30  INFO 15296 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T19:07:01.375+05:30  INFO 15296 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : First we will insert data on the Employee Repository
+2026-02-23T19:07:01.487+05:30  INFO 15296 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsValid
+2026-02-23T19:07:01.521+05:30  INFO 15296 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:11:45.458+05:30  INFO 460 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 460 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T19:11:45.461+05:30  INFO 460 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T19:11:46.391+05:30  INFO 460 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T19:11:46.533+05:30  INFO 460 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2026-02-23T19:11:46.637+05:30  INFO 460 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T19:11:46.997+05:30  INFO 460 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:9b2f7ebf-1d59-4382-a5fc-e495a6e4dd40;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T19:11:47.581+05:30  INFO 460 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T19:11:47.706+05:30  INFO 460 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T19:11:47.780+05:30  INFO 460 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T19:11:48.461+05:30  INFO 460 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T19:11:48.573+05:30  WARN 460 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T19:11:50.407+05:30  INFO 460 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T19:11:50.552+05:30  INFO 460 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:11:51.358+05:30  INFO 460 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 6.835 seconds (process running for 9.612)
+2026-02-23T19:11:52.417+05:30  INFO 460 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T19:11:52.824+05:30  INFO 460 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:13:55.786+05:30  INFO 18512 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 18512 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T19:13:55.789+05:30  INFO 18512 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T19:13:56.610+05:30  INFO 18512 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T19:13:56.762+05:30  INFO 18512 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2026-02-23T19:13:56.895+05:30  INFO 18512 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T19:13:57.273+05:30  INFO 18512 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:b69711ce-230b-4ed2-acca-86af78eef834;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T19:13:57.874+05:30  INFO 18512 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T19:13:57.993+05:30  INFO 18512 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T19:13:58.070+05:30  INFO 18512 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T19:13:58.732+05:30  INFO 18512 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T19:13:58.839+05:30  WARN 18512 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T19:14:00.697+05:30  INFO 18512 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T19:14:00.766+05:30  INFO 18512 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:14:01.604+05:30  INFO 18512 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 6.768 seconds (process running for 9.536)
+2026-02-23T19:14:02.542+05:30  INFO 18512 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T19:14:03.033+05:30  INFO 18512 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:14:25.211+05:30  INFO 11548 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Starting EmployeeRepositoryTest using Java 21.0.9 with PID 11548 (started by Sarfa in F:\springip\springbootesting)
+2026-02-23T19:14:25.214+05:30  INFO 11548 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : The following 1 profile is active: "test"
+2026-02-23T19:14:26.123+05:30  INFO 11548 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-23T19:14:26.279+05:30  INFO 11548 --- [testingapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 1 JPA repository interface.
+2026-02-23T19:14:26.385+05:30  INFO 11548 --- [testingapp] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-02-23T19:14:26.769+05:30  INFO 11548 --- [testingapp] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:ec685d42-b16d-4fbf-be8a-2a0e45664c78;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-02-23T19:14:27.380+05:30  INFO 11548 --- [testingapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-23T19:14:27.498+05:30  INFO 11548 --- [testingapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-23T19:14:27.572+05:30  INFO 11548 --- [testingapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-23T19:14:28.248+05:30  INFO 11548 --- [testingapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-23T19:14:28.350+05:30  WARN 11548 --- [testingapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-23T19:14:30.013+05:30  INFO 11548 --- [testingapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-23T19:14:30.081+05:30  INFO 11548 --- [testingapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-23T19:14:31.303+05:30  INFO 11548 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : Started EmployeeRepositoryTest in 7.057 seconds (process running for 9.842)
+2026-02-23T19:14:32.354+05:30  INFO 11548 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsNotValid
+2026-02-23T19:14:32.742+05:30  INFO 11548 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : First we will insert data on the Employee Repository
+2026-02-23T19:14:32.861+05:30  INFO 11548 --- [testingapp] [main] c.t.t.repository.EmployeeRepositoryTest  : testfindByEmail_whenEmailIsValid
+2026-02-23T19:14:32.941+05:30  INFO 11548 --- [testingapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

@@ -2,7 +2,7 @@ package com.testingapp.testingapp.advice;
 
 
 
-import com.openthinks.others.webpages.exception.ResourceAlreadyExistException;
+import com.testingapp.testingapp.exceptions.ResourceAlreadyExistException;
 import com.testingapp.testingapp.exceptions.ResourceNotFoundException;
 import com.testingapp.testingapp.reponse.ApiResponse;
 import org.springframework.http.HttpStatus;
